@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body{
+      margin: 0 auto;
+      background-color: var(--background);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .container{
+    display: flex;
+    height: 100vh;
+  }
+
+  .login{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100vh;
+  }
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form-background);
+    margin: 0 auto;
+    width: 650px;
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+}
+
+.text h2{
+    color: var(--text-title);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-base);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text2{
+    display: flex;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-base);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
+
+.forms p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-size: 400;
+}
+
+.forms button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--primary-color);
+}
+
+.forms button p{
+    font-weight: 600;
+    color: var(--background);
+}
+
+  .img-car{
+    width: 50%;
+    background-size: cover;
+    background-image: url('../img/side-image.jpg');
+  }
+  
+
+/* .container footer{
+    margin: 0 0 0 450px;
+    position: absolute;
+  } */
