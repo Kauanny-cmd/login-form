@@ -36,6 +36,7 @@
       align-items: center;
       width: 50%;
       height: 100vh;
+      margin: 0 auto;
   }
 
 .container2{
@@ -45,7 +46,7 @@
     margin: 0 auto;
     width: 650px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 35px;
     align-items: center;
 }
 
@@ -59,13 +60,17 @@
     font-family: 'Roboto', sans-serif;
     color: var(--text-base);
     margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    
 }
 
 .text2{
     display: flex;
+}
+
+.lembre{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem;
 }
 
 .forms{
@@ -76,6 +81,10 @@
     font-weight: 400;
 }
 
+.forms p{
+    text-align: center;
+}
+
 .forms input{
     all: unset;
     border: 1px solid var(--text-base);
@@ -84,16 +93,21 @@
     margin: 5px;
 }
 
-input#email{
-    display: flex;
-    
+/* Mudança no foco */
+.forms input:focus-within{
+    border: 1px solid var(--primary-color);
+}
+
+/* input#email{
+    display: flex; 
     background-size: contain;
     background-repeat:no-repeat;
     padding: 8px 15px 18px 45px;
     height:7px;   
     background-repeat:no-repeat;
     background-image: url('../icon/mail.svg') !important;
-}
+} */
+
 
 .check input{
     all: unset;
@@ -106,8 +120,8 @@ input#email{
 
 input:checked{
     background-color: var(--primary-color);
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border: 0px solid var(--text-base);
   }
 
@@ -118,7 +132,8 @@ input:checked{
 }
 
 .forms button{
-    width: 300px;
+    cursor: pointer;
+    width: 100%;
     height: 40px;
     border: none;
     border-radius: 4px;
@@ -135,14 +150,13 @@ input:checked{
     color: var(--background);
 }
 
-  /* .img-car{
+  .img-car{
     width: 50%;
     background-size: cover;
     background-image: url('../img/side-image.jpg');
-  } */
+  } 
   
-
-/* .container footer{
-    margin: 0 0 0 450px;
+  .container footer{
+    margin: 450px 0 0 450px;
     position: absolute;
-  } */
+  }
