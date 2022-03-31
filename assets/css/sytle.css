@@ -43,7 +43,6 @@
     display: flex;
     flex-direction: column;
     background-color: var(--form-background);
-    margin: 0 auto;
     width: 650px;
     border-radius: 5px;
     padding: 35px;
@@ -156,7 +155,14 @@ input:checked{
     background-image: url('../img/side-image.jpg');
   } 
   
-  .container footer{
-    margin: 450px 0 0 450px;
+  /* .container footer{
     position: absolute;
+    color: var(--primary-color);
+  } */
+
+  @media(max-width: 875px) {
+      .img-car{
+        background-image: none;
+        width: 0;
+      }
   }
